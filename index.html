@@ -1,0 +1,757 @@
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#160609">
+    <meta name="description" content="Portofolio Daffa Johanda Antoni, mahasiswa S1 Pendidikan Teknologi Informasi Universitas Negeri Surabaya.">
+    <title>Daffa Johanda Antoni | Portfolio</title>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <style>
+        * {
+            scroll-behavior: smooth;
+            box-sizing: border-box;
+        }
+
+        body {
+            background: #100609;
+            color: #fff;
+            font-family: 'Inter', sans-serif;
+        }
+
+        ::selection {
+            background: #b91c35;
+            color: white;
+        }
+
+        .card-bg {
+            background: linear-gradient(145deg, #291016, #1b0b10);
+            border: 1px solid rgba(255, 255, 255, 0.09);
+        }
+
+        .glass {
+            background: rgba(25, 8, 13, 0.88);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(18px);
+            -webkit-backdrop-filter: blur(18px);
+        }
+
+        .accent {
+            color: #fb7185;
+        }
+
+        .gradient-text {
+            background: linear-gradient(90deg, #fff, #fb7185);
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+        }
+
+        .btn-primary {
+            background: #fff;
+            color: #19080d;
+            transition: .25s ease;
+        }
+
+        .btn-primary:hover {
+            background: #fb7185;
+            color: white;
+            transform: translateY(-2px);
+        }
+
+        .btn-outline {
+            border: 1px solid rgba(255, 255, 255, .2);
+            transition: .25s ease;
+        }
+
+        .btn-outline:hover {
+            border-color: #fb7185;
+            color: #fb7185;
+            transform: translateY(-2px);
+        }
+
+        .project-card {
+            transition: transform .3s ease, border-color .3s ease;
+        }
+
+        .project-card:hover {
+            transform: translateY(-6px);
+            border-color: rgba(251, 113, 133, .5);
+        }
+
+        .project-image {
+            transition: transform .5s ease;
+        }
+
+        .project-card:hover .project-image {
+            transform: scale(1.04);
+        }
+
+        .section-label {
+            color: #fb7185;
+            letter-spacing: .2em;
+        }
+
+        .section-divider {
+            width: 48px;
+            height: 3px;
+            background: #fb7185;
+            border-radius: 10px;
+        }
+
+        .skill-tag {
+            background: rgba(255, 255, 255, .05);
+            border: 1px solid rgba(255, 255, 255, .08);
+            transition: .2s ease;
+        }
+
+        .skill-tag:hover {
+            background: rgba(190, 24, 49, .18);
+            border-color: rgba(251, 113, 133, .4);
+        }
+
+        .contact-link {
+            transition: .25s ease;
+        }
+
+        .contact-link:hover {
+            border-color: rgba(251, 113, 133, .5);
+            transform: translateX(3px);
+        }
+
+        section {
+            scroll-margin-top: 110px;
+        }
+
+        @media (prefers-reduced-motion: reduce) {
+            *, *::before, *::after {
+                scroll-behavior: auto !important;
+                transition-duration: .01ms !important;
+            }
+        }
+    </style>
+</head>
+
+<body class="antialiased">
+
+    <header class="fixed top-4 left-0 right-0 z-50 px-4">
+        <nav class="glass max-w-5xl mx-auto rounded-2xl md:rounded-full px-4 md:px-6 py-3 flex items-center justify-between gap-3 shadow-2xl">
+
+            <a href="#hero" class="flex items-center gap-3 shrink-0">
+                <span class="w-10 h-10 rounded-full bg-white text-black flex items-center justify-center font-extrabold">
+                    D
+                </span>
+                <span class="font-bold text-sm md:text-base">
+                    Daffa<span class="accent">.</span>
+                </span>
+            </a>
+
+            <div class="hidden md:flex items-center gap-6 text-sm text-neutral-400">
+                <a href="#work" class="hover:text-white transition">Projects</a>
+                <a href="#skills" class="hover:text-white transition">Skills</a>
+                <a href="#about" class="hover:text-white transition">About</a>
+                <a href="#education" class="hover:text-white transition">Pendidikan</a>
+                <a href="#achievement" class="hover:text-white transition">Achievements</a>
+            </div>
+
+            <a href="#contact" class="btn-primary rounded-full px-5 py-2.5 text-sm font-bold shrink-0">
+                Let's Talk <i class="fa-solid fa-arrow-up-right-from-square ml-1"></i>
+            </a>
+        </nav>
+    </header>
+
+    <main class="max-w-5xl mx-auto px-5 md:px-8 pt-36 pb-20 space-y-28">
+
+        <section id="hero" class="grid grid-cols-1 md:grid-cols-5 gap-10 items-center pt-4">
+
+            <div class="md:col-span-3 order-2 md:order-1">
+                <div class="inline-flex items-center gap-2 rounded-full border border-rose-400/20 bg-rose-500/10 px-4 py-2 text-xs text-rose-200 mb-6">
+                    <span class="w-2 h-2 rounded-full bg-rose-400"></span>
+                    Mahasiswa Pendidikan Teknologi Informasi
+                </div>
+
+                <p class="text-sm text-neutral-400 mb-3">HELLO, I'M</p>
+
+                <h1 class="text-4xl sm:text-5xl md:text-6xl font-extrabold tracking-tight leading-tight">
+                    Daffa Johanda
+                    <span class="gradient-text block">Antoni.</span>
+                </h1>
+
+                <p class="text-neutral-400 text-base md:text-lg leading-relaxed mt-6 max-w-xl">
+                    Mahasiswa yang tertarik pada web development,
+                    software development, database, dan eksplorasi teknologi
+                    untuk membangun solusi digital yang bermanfaat.
+                </p>
+
+                <div class="flex flex-wrap gap-3 mt-8">
+                    <a href="#work" class="btn-primary px-6 py-3 rounded-full text-sm font-bold">
+                        Lihat Proyek <i class="fa-solid fa-arrow-right ml-2"></i>
+                    </a>
+
+                    <a href="#about" class="btn-outline px-6 py-3 rounded-full text-sm font-semibold">
+                        Tentang Saya
+                    </a>
+                </div>
+
+                <div class="flex items-center gap-5 mt-9 text-neutral-400">
+                    <a href="https://github.com/dpzx05" target="_blank" rel="noopener noreferrer"
+                       aria-label="GitHub" class="hover:text-white transition text-xl">
+                        <i class="fa-brands fa-github"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/daffa-johanda-antoni-baa289441/"
+                       target="_blank" rel="noopener noreferrer"
+                       aria-label="LinkedIn" class="hover:text-white transition text-xl">
+                        <i class="fa-brands fa-linkedin"></i>
+                    </a>
+                    <a href="mailto:daffatanpan123@gmail.com"
+                       aria-label="Email" class="hover:text-white transition text-xl">
+                        <i class="fa-solid fa-envelope"></i>
+                    </a>
+                    <span class="w-20 h-px bg-neutral-800"></span>
+                    <span class="text-xs">Based in Indonesia</span>
+                </div>
+            </div>
+
+            <div class="md:col-span-2 order-1 md:order-2 flex justify-center">
+                <div class="relative w-64 h-72 md:w-full md:h-96 max-w-xs">
+                    <div class="absolute inset-0 rounded-3xl border border-rose-400/30 rotate-6"></div>
+
+                    <div class="absolute inset-0 rounded-3xl overflow-hidden bg-neutral-900 border border-white/10">
+                        <img
+                            src="profile.jpeg"
+                            alt="Foto profil Daffa Johanda Antoni"
+                            class="w-full h-full object-cover"
+                            onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';"
+                        >
+                        <div class="hidden w-full h-full items-center justify-center flex-col gap-3 text-neutral-500">
+                            <i class="fa-solid fa-user text-5xl"></i>
+                            <span class="text-xs">Tambahkan foto profil</span>
+                        </div>
+                    </div>
+
+                    <div class="absolute -bottom-5 -left-5 glass rounded-2xl p-4 shadow-xl">
+                        <div class="flex items-center gap-3">
+                            <div class="w-10 h-10 rounded-xl bg-rose-500/15 flex items-center justify-center accent">
+                                <i class="fa-solid fa-code text-lg"></i>
+                            </div>
+                            <div>
+                                <p class="font-bold text-sm">Tech Enthusiast</p>
+                                <p class="text-xs text-neutral-400">Always learning</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="work" class="space-y-8">
+            <div>
+                <p class="section-label text-xs uppercase font-bold mb-3">SELECTED WORK</p>
+                <h2 class="text-3xl md:text-4xl font-extrabold">Proyek Pilihan<span class="accent">.</span></h2>
+                <p class="text-neutral-400 text-sm mt-3 max-w-xl">
+                    Beberapa proyek yang menjadi bagian dari perjalanan
+                    belajar dan eksplorasi teknologi saya.
+                </p>
+                <div class="section-divider mt-5"></div>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+
+                <article class="card-bg project-card rounded-2xl overflow-hidden">
+                    <div class="h-56 overflow-hidden bg-neutral-900">
+                        <img
+                            src="web-1.png"
+                            alt="Tampilan proyek web DHM DappaHondaMotor"
+                            loading="lazy"
+                            class="project-image w-full h-full object-cover"
+                        >
+                    </div>
+
+                    <div class="p-6 space-y-4">
+                        <div class="flex justify-between items-center gap-3">
+                            <span class="text-xs accent font-semibold uppercase tracking-wider">
+                                Web Development
+                            </span>
+                            <i class="fa-solid fa-arrow-up-right-from-square text-neutral-500"></i>
+                        </div>
+
+                        <h3 class="text-xl font-bold">DHM — DappaHondaMotor</h3>
+
+                        <p class="text-sm text-neutral-400 leading-relaxed">
+                            Proyek website otomotif yang dikembangkan sebagai
+                            bagian dari praktik kejuruan, dengan fokus pada
+                            pengelolaan informasi dan sistem berbasis web.
+                        </p>
+
+                        <div class="flex flex-wrap gap-2">
+                            <span class="skill-tag rounded-lg px-3 py-1.5 text-xs">HTML</span>
+                            <span class="skill-tag rounded-lg px-3 py-1.5 text-xs">CSS</span>
+                            <span class="skill-tag rounded-lg px-3 py-1.5 text-xs">PHP</span>
+                            <span class="skill-tag rounded-lg px-3 py-1.5 text-xs">MySQL</span>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="card-bg rounded-2xl p-7 flex flex-col justify-center min-h-72">
+                    <div class="w-14 h-14 rounded-2xl bg-rose-500/10 flex items-center justify-center accent text-2xl mb-5">
+                        <i class="fa-solid fa-laptop-code"></i>
+                    </div>
+
+                    <p class="text-xs section-label font-bold uppercase mb-3">COMING NEXT</p>
+
+                    <h3 class="text-xl font-bold">More Projects Ahead</h3>
+
+                    <p class="text-sm text-neutral-400 leading-relaxed mt-3">
+                        Sedang mengeksplorasi ide dan mengembangkan
+                        kemampuan untuk proyek digital berikutnya.
+                    </p>
+                </article>
+
+            </div>
+        </section>
+
+        <section id="skills" class="space-y-8">
+            <div>
+                <p class="section-label text-xs uppercase font-bold mb-3">MY CAPABILITIES</p>
+                <h2 class="text-3xl md:text-4xl font-extrabold">Skills & Expertise<span class="accent">.</span></h2>
+                <div class="section-divider mt-5"></div>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+
+                <div class="card-bg rounded-2xl p-7">
+                    <div class="flex items-center gap-3 mb-6">
+                        <div class="w-11 h-11 rounded-xl bg-rose-500/10 flex items-center justify-center accent">
+                            <i class="fa-solid fa-layer-group text-lg"></i>
+                        </div>
+                        <h3 class="text-lg font-bold">Skills & Tools</h3>
+                    </div>
+
+                    <div class="flex flex-wrap gap-3">
+                        <span class="skill-tag rounded-xl px-3 py-2 text-sm">
+                            <i class="fa-brands fa-html5 text-orange-500 mr-2"></i>HTML5
+                        </span>
+                        <span class="skill-tag rounded-xl px-3 py-2 text-sm">
+                            <i class="fa-brands fa-css3-alt text-blue-400 mr-2"></i>CSS
+                        </span>
+                        <span class="skill-tag rounded-xl px-3 py-2 text-sm">
+                            <i class="fa-brands fa-js text-yellow-400 mr-2"></i>JavaScript
+                        </span>
+                        <span class="skill-tag rounded-xl px-3 py-2 text-sm">
+                            <i class="fa-brands fa-php text-indigo-400 mr-2"></i>PHP
+                        </span>
+                        <span class="skill-tag rounded-xl px-3 py-2 text-sm">
+                            <i class="fa-solid fa-database text-green-400 mr-2"></i>MySQL
+                        </span>
+                        <span class="skill-tag rounded-xl px-3 py-2 text-sm">
+                            <i class="fa-solid fa-pen-nib text-purple-400 mr-2"></i>Editing
+                        </span>
+                        <span class="skill-tag rounded-xl px-3 py-2 text-sm">
+                            <i class="fa-solid fa-robot text-rose-400 mr-2"></i>AI Prompting
+                        </span>
+                    </div>
+
+                    <p class="text-xs text-neutral-500 mt-6 leading-relaxed">
+                        Teknologi yang pernah digunakan atau sedang dipelajari.
+                    </p>
+                </div>
+
+                <div class="card-bg rounded-2xl p-7">
+                    <span class="text-5xl font-extrabold text-white/10">01</span>
+
+                    <div class="w-12 h-12 rounded-xl bg-rose-500/10 flex items-center justify-center accent mt-4 mb-5">
+                        <i class="fa-solid fa-code text-xl"></i>
+                    </div>
+
+                    <h3 class="text-xl font-bold">Web & Digital Systems</h3>
+
+                    <p class="text-sm text-neutral-400 leading-relaxed mt-3">
+                        Membangun website, mengelola database, serta memahami
+                        alur kerja sistem digital untuk membantu menyelesaikan
+                        permasalahan secara praktis dan terstruktur.
+                    </p>
+
+                    <div class="w-full bg-white/5 h-1 rounded-full mt-7 overflow-hidden">
+                        <div class="bg-rose-400 w-2/3 h-full rounded-full"></div>
+                    </div>
+                    <p class="text-xs text-neutral-500 mt-2">Terus belajar dan berkembang</p>
+                </div>
+
+            </div>
+        </section>
+
+        <section id="about" class="space-y-8">
+            <div>
+                <p class="section-label text-xs uppercase font-bold mb-3">ABOUT ME</p>
+                <h2 class="text-3xl md:text-4xl font-extrabold">
+                    Mengenal Saya Lebih Dekat<span class="accent">.</span>
+                </h2>
+                <div class="section-divider mt-5"></div>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-5 gap-6">
+
+                <div class="card-bg rounded-2xl p-6 md:col-span-2">
+                    <div class="w-12 h-12 rounded-xl bg-rose-500/10 flex items-center justify-center accent mb-5">
+                        <i class="fa-solid fa-user-graduate text-xl"></i>
+                    </div>
+
+                    <h3 class="text-xl font-bold">Profil Mahasiswa</h3>
+
+                    <div class="border-t border-white/10 my-5"></div>
+
+                    <div class="space-y-4 text-sm">
+                        <div>
+                            <p class="text-neutral-500 text-xs mb-1">Nama Lengkap</p>
+                            <p class="text-neutral-200 font-medium">Daffa Johanda Antoni</p>
+                        </div>
+                        <div>
+                            <p class="text-neutral-500 text-xs mb-1">NIM</p>
+                            <p class="text-neutral-200 font-medium">26050974158</p>
+                        </div>
+                        <div>
+                            <p class="text-neutral-500 text-xs mb-1">Program Studi</p>
+                            <p class="text-neutral-200 font-medium">S1 Pendidikan Teknologi Informasi</p>
+                        </div>
+                        <div>
+                            <p class="text-neutral-500 text-xs mb-1">Universitas</p>
+                            <p class="text-neutral-200 font-medium">Universitas Negeri Surabaya</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card-bg rounded-2xl p-7 md:col-span-3">
+                    <h3 class="text-xl font-bold mb-4">Problem Solver. Tech Enthusiast.</h3>
+
+                    <p class="text-sm text-neutral-400 leading-relaxed">
+                        Saya adalah mahasiswa S1 Pendidikan Teknologi Informasi
+                        yang tertarik pada pengembangan perangkat lunak,
+                        web development, database, dan teknologi digital.
+                        Saya senang mempelajari hal baru, mencoba berbagai
+                        tools, serta mengubah ide menjadi proyek yang bisa digunakan.
+                    </p>
+
+                    <p class="text-sm text-neutral-400 leading-relaxed mt-4">
+                        Saat ini saya berfokus pada pengembangan kemampuan
+                        teknis dan pemahaman teknologi sebagai bekal untuk
+                        mengembangkan solusi digital sekaligus mendukung
+                        pembelajaran berbasis teknologi.
+                    </p>
+
+                    <div class="grid grid-cols-3 gap-3 mt-8">
+                        <div class="bg-white/[0.035] border border-white/5 p-4 rounded-xl">
+                            <i class="fa-solid fa-code accent mb-3"></i>
+                            <p class="text-sm font-bold">Web Dev</p>
+                            <p class="text-xs text-neutral-500 mt-1">Building</p>
+                        </div>
+
+                        <div class="bg-white/[0.035] border border-white/5 p-4 rounded-xl">
+                            <i class="fa-solid fa-database accent mb-3"></i>
+                            <p class="text-sm font-bold">Database</p>
+                            <p class="text-xs text-neutral-500 mt-1">Exploring</p>
+                        </div>
+
+                        <div class="bg-white/[0.035] border border-white/5 p-4 rounded-xl">
+                            <i class="fa-solid fa-graduation-cap accent mb-3"></i>
+                            <p class="text-sm font-bold">Learning</p>
+                            <p class="text-xs text-neutral-500 mt-1">Growing</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <section id="education" class="space-y-8">
+            <div>
+                <p class="section-label text-xs uppercase font-bold mb-3">EDUCATION</p>
+                <h2 class="text-3xl md:text-4xl font-extrabold">
+                    Riwayat Pendidikan<span class="accent">.</span>
+                </h2>
+                <p class="text-sm text-neutral-400 mt-3">
+                    Perjalanan pendidikan saya dari sekolah dasar hingga perguruan tinggi.
+                </p>
+                <div class="section-divider mt-5"></div>
+            </div>
+
+            <div class="relative ml-3 border-l border-rose-400/30 pl-7 space-y-6">
+                <article class="card-bg rounded-2xl p-6 relative">
+                    <span class="absolute -left-[35px] top-7 w-4 h-4 rounded-full bg-rose-400 border-4 border-[#100609]"></span>
+                    <div class="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-3">
+                        <div class="flex items-start gap-4">
+                            <div class="w-12 h-12 rounded-xl bg-rose-500/10 flex items-center justify-center accent shrink-0">
+                                <i class="fa-solid fa-school text-lg"></i>
+                            </div>
+                            <div>
+                             <a href="https://sdmumtaz.sch.id/"
+                                target="_blank" rel="noopener noreferrer"
+                                class="contact-link flex items-center justify-between gap-3 bg-white/[0.035] border border-white/5 rounded-xl p-4">
+                                <h3 class="text-lg font-bold">SD Muhammadiyah 1-2 Taman</h3>
+                                <p class="text-sm text-neutral-400 mt-1">Sekolah Dasar</p>
+                             </a>
+                            </div>
+                        </div>
+                        <span class="text-xs font-semibold accent bg-rose-500/10 rounded-full px-3 py-2 w-fit">2014–2020</span>
+                    </div>
+                </article>
+
+                <article class="card-bg rounded-2xl p-6 relative">
+                    <span class="absolute -left-[35px] top-7 w-4 h-4 rounded-full bg-rose-400 border-4 border-[#100609]"></span>
+                    <div class="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-3">
+                        <div class="flex items-start gap-4">
+                            <div class="w-12 h-12 rounded-xl bg-rose-500/10 flex items-center justify-center accent shrink-0">
+                                <i class="fa-solid fa-book-open text-lg"></i>
+                            </div>
+                            <div>
+                             <a href="https://www.instagram.com/smpdamin_tws_official/"
+                                target="_blank" rel="noopener noreferrer"
+                                class="contact-link flex items-center justify-between gap-3 bg-white/[0.035] border border-white/5 rounded-xl p-4">
+                                <h3 class="text-lg font-bold">SMP Darul Mutallimin</h3>
+                                <p class="text-sm text-neutral-400 mt-1">Sekolah Menengah Pertama</p>
+                             </a>
+                            </div>
+                        </div>
+                        <span class="text-xs font-semibold accent bg-rose-500/10 rounded-full px-3 py-2 w-fit">2020–2023</span>
+                    </div>
+                </article>
+
+                <article class="card-bg rounded-2xl p-6 relative">
+                    <span class="absolute -left-[35px] top-7 w-4 h-4 rounded-full bg-rose-400 border-4 border-[#100609]"></span>
+                    <div class="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-3">
+                        <div class="flex items-start gap-4">
+                            <div class="w-12 h-12 rounded-xl bg-rose-500/10 flex items-center justify-center accent shrink-0">
+                                <i class="fa-solid fa-graduation-cap text-lg"></i>
+                            </div>
+                            <div>
+                             <a href="https://smkn3buduran.sch.id/"
+                                target="_blank" rel="noopener noreferrer"
+                                class="contact-link flex items-center justify-between gap-3 bg-white/[0.035] border border-white/5 rounded-xl p-4">
+                                <h3 class="text-lg font-bold">SMKN 3 Buduran Sidoarjo</h3>
+                                <p class="text-sm text-neutral-400 mt-1">Sekolah Menengah Kejuruan</p>
+                             </a>
+                            </div>
+                        </div>
+                        <span class="text-xs font-semibold accent bg-rose-500/10 rounded-full px-3 py-2 w-fit">2023–2026</span>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <section id="achievement" class="space-y-8">
+            <div>
+                <p class="section-label text-xs uppercase font-bold mb-3">ACHIEVEMENTS</p>
+                <h2 class="text-3xl md:text-4xl font-extrabold">
+                    Pencapaian & Sertifikat<span class="accent">.</span>
+                </h2>
+                <p class="text-sm text-neutral-400 mt-3">
+                    Dokumentasi perjalanan belajar dan pencapaian akademik.
+                </p>
+                <div class="section-divider mt-5"></div>
+            </div>
+
+            <div class="card-bg rounded-2xl p-7 flex flex-col sm:flex-row gap-5 items-start">
+                <div class="w-14 h-14 rounded-2xl bg-rose-500/10 flex items-center justify-center accent text-2xl shrink-0">
+                    <i class="fa-solid fa-award"></i>
+                </div>
+
+                <div>
+                    <h3 class="font-bold text-lg">Sertifikat Toefl</h3>
+                    <p class="text-sm text-neutral-400 mt-2 leading-relaxed">
+                        Saya mendapatkan Nilai Toefl 600-+
+                    </p>
+                    <p class="text-xs text-neutral-500 mt-3">
+                        Dan Saya Bangga :]
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="card-bg rounded-3xl p-7 md:p-12 relative overflow-hidden">
+            <div class="absolute -top-24 -right-20 w-64 h-64 bg-rose-700/10 rounded-full blur-3xl pointer-events-none"></div>
+
+            <div class="relative grid grid-cols-1 md:grid-cols-2 gap-10">
+
+                <div>
+                    <p class="section-label text-xs uppercase font-bold mb-4">GET IN TOUCH</p>
+
+                    <h2 class="text-4xl md:text-5xl font-extrabold leading-tight">
+                        Let's Build<br>
+                        <span class="gradient-text">Something Great.</span>
+                    </h2>
+
+                    <p class="text-sm text-neutral-400 leading-relaxed mt-5 max-w-md">
+                        Terbuka untuk berdiskusi, belajar bersama, dan
+                        berkolaborasi dalam proyek teknologi maupun
+                        pengembangan website.
+                    </p>
+
+                    <a href="mailto:daffatanpan123@gmail.com"
+                       class="btn-primary inline-flex items-center gap-3 px-6 py-3 rounded-full text-sm font-bold mt-7">
+                        Hubungi Saya <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+                </div>
+
+                <div class="space-y-3 self-center">
+                    <a href="mailto:daffatanpan123@gmail.com"
+                       class="contact-link flex items-center justify-between gap-3 bg-white/[0.035] border border-white/5 rounded-xl p-4">
+                        <div class="flex items-center gap-3 min-w-0">
+                            <i class="fa-solid fa-envelope accent text-lg"></i>
+                            <div class="min-w-0">
+                                <p class="text-xs text-neutral-500">EMAIL</p>
+                                <p class="text-sm font-medium break-all">daffatanpan123@gmail.com</p>
+                            </div>
+                        </div>
+                        <i class="fa-solid fa-arrow-up-right-from-square text-neutral-500 text-xs"></i>
+                    </a>
+
+                    <a href="https://github.com/dpzx05"
+                       target="_blank" rel="noopener noreferrer"
+                       class="contact-link flex items-center justify-between gap-3 bg-white/[0.035] border border-white/5 rounded-xl p-4">
+                        <div class="flex items-center gap-3 min-w-0">
+                            <i class="fa-brands fa-github text-xl accent"></i>
+                            <div>
+                                <p class="text-xs text-neutral-500">GITHUB</p>
+                                <p class="text-sm font-medium">dpzx05</p>
+                            </div>
+                        </div>
+                        <i class="fa-solid fa-arrow-up-right-from-square text-neutral-500 text-xs"></i>
+                    </a>
+
+                    <a href="https://www.linkedin.com/in/daffa-johanda-antoni-baa289441/"
+                       target="_blank" rel="noopener noreferrer"
+                       class="contact-link flex items-center justify-between gap-3 bg-white/[0.035] border border-white/5 rounded-xl p-4">
+                        <div class="flex items-center gap-3 min-w-0">
+                            <i class="fa-brands fa-linkedin text-xl accent"></i>
+                            <div class="min-w-0">
+                                <p class="text-xs text-neutral-500">LINKEDIN</p>
+                                <p class="text-sm font-medium break-all">Daffa Johanda Antoni</p>
+                            </div>
+                        </div>
+                        <i class="fa-solid fa-arrow-up-right-from-square text-neutral-500 text-xs"></i>
+                    </a>
+                </div>
+
+            </div>
+        </section>
+
+    </main>
+
+    <audio id="backgroundMusic" src="risk-it-all.mp3" loop preload="metadata"></audio>
+    <div id="musicWidget" class="fixed bottom-5 right-5 z-50 flex items-center gap-3 rounded-2xl border border-white/10 bg-[#19080d]/90 px-4 py-3 shadow-2xl backdrop-blur-xl">
+        <div class="flex h-10 w-10 items-center justify-center rounded-xl bg-rose-500/15 text-rose-300">
+            <i class="fa-solid fa-music"></i>
+        </div>
+        <div class="min-w-0">
+            <p class="text-sm font-bold">Risk It All</p>
+            <p id="musicStatus" class="text-xs text-neutral-400">Musik latar</p>
+        </div>
+        <button id="musicToggle" type="button" aria-label="Putar musik" class="ml-1 flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-white text-[#19080d] transition hover:bg-rose-300">
+            <i id="musicIcon" class="fa-solid fa-play"></i>
+        </button>
+    </div>
+
+    <script>
+        (() => {
+            const music = document.getElementById("backgroundMusic");
+            const toggle = document.getElementById("musicToggle");
+            const icon = document.getElementById("musicIcon");
+            const status = document.getElementById("musicStatus");
+
+            function updateMusicUI(isPlaying) {
+                icon.className = isPlaying ? "fa-solid fa-pause" : "fa-solid fa-play";
+                toggle.setAttribute("aria-label", isPlaying ? "Jeda musik" : "Putar musik");
+                status.textContent = isPlaying ? "Sedang diputar" : "Klik untuk memutar";
+            }
+
+            async function playMusic() {
+                try {
+                    await music.play();
+                    updateMusicUI(true);
+                } catch (error) {
+                    updateMusicUI(false);
+                    status.textContent = "Klik ▶ untuk memulai";
+                }
+            }
+
+            toggle.addEventListener("click", async () => {
+                if (music.paused) {
+                    await playMusic();
+                } else {
+                    music.pause();
+                    updateMusicUI(false);
+                }
+            });
+
+            music.addEventListener("play", () => updateMusicUI(true));
+            music.addEventListener("pause", () => updateMusicUI(false));
+
+            // Try autoplay; browsers may require the visitor to press Play first.
+            playMusic();
+        })();
+    </script>
+
+    <footer class="border-t border-white/5 px-5 py-7">
+        <div class="max-w-5xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-3 text-xs text-neutral-500">
+            <p>© 2026 Daffa Johanda Antoni. All rights reserved.</p>
+            <a href="#hero" class="hover:text-white transition">
+                Back to top <i class="fa-solid fa-arrow-up ml-1"></i>
+            </a>
+        </div>
+    </footer>
+
+    <script>
+        (() => {
+            let audioContext;
+
+            function playClickSound() {
+                try {
+                    audioContext ??= new (window.AudioContext || window.webkitAudioContext)();
+
+                    if (audioContext.state === "suspended") {
+                        audioContext.resume();
+                    }
+
+                    const oscillator = audioContext.createOscillator();
+                    const gain = audioContext.createGain();
+
+                    oscillator.type = "sine";
+                    oscillator.frequency.setValueAtTime(850, audioContext.currentTime);
+                    oscillator.frequency.exponentialRampToValueAtTime(
+                        560, audioContext.currentTime + 0.045
+                    );
+
+                    gain.gain.setValueAtTime(0.0001, audioContext.currentTime);
+                    gain.gain.exponentialRampToValueAtTime(
+                        0.045, audioContext.currentTime + 0.006
+                    );
+                    gain.gain.exponentialRampToValueAtTime(
+                        0.0001, audioContext.currentTime + 0.065
+                    );
+
+                    oscillator.connect(gain);
+                    gain.connect(audioContext.destination);
+                    oscillator.start();
+                    oscillator.stop(audioContext.currentTime + 0.07);
+                } catch (error) {
+                    // Audio is optional; the page remains functional if unavailable.
+                }
+            }
+
+            document.addEventListener("click", (event) => {
+                const target = event.target.closest(
+                    "a, button, [role='button'], input[type='button'], input[type='submit']"
+                );
+
+                if (target) playClickSound();
+            });
+        })();
+    </script>
+
+</body>
+</html>
